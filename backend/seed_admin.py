@@ -9,7 +9,7 @@ def seed():
         db.drop_all()
         db.create_all()
         
-        admin_email = "admin@contextflow.ai"
+        admin_email = "admin@nexus.ai"
         hashed_pw = hashlib.sha256("admin123".encode()).hexdigest()
         
         admin = User.query.filter_by(email=admin_email).first()
@@ -28,7 +28,7 @@ def seed():
             print(f"Updated Admin: {admin.name}")
 
         # Seed a Member
-        member_email = "member@contextflow.ai"
+        member_email = "member@nexus.ai"
         member_pw = hashlib.sha256("member123".encode()).hexdigest()
         member = User.query.filter_by(email=member_email).first()
         if not member:
@@ -48,10 +48,10 @@ def seed():
         db.session.commit()
 
         # Seed Demo Project
-        project = Project.query.filter_by(name="ContextFlow MVP").first()
+        project = Project.query.filter_by(name="Nexus MVP").first()
         if not project:
             project = Project(
-                name="ContextFlow MVP",
+                name="Nexus MVP",
                 description="Core platform for high-fidelity context capture and AI-driven handovers.",
                 status="ACTIVE"
             )

@@ -43,7 +43,7 @@ const Login = () => {
                         <ShieldCheck size={12} />
                         Identity Verification
                     </div>
-                    <h1 className="text-4xl font-black text-text-main tracking-tighter">ContextFlow</h1>
+                    <h1 className="text-4xl font-black text-text-main tracking-tighter">Nexus</h1>
                     <p className="text-text-muted text-sm font-medium">Authenticate to access the strategic intelligence layer.</p>
                 </div>
 

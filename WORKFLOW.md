@@ -1,6 +1,6 @@
-# ContextFlow: System Workflow
+# Nexus: System Workflow
 
-This document provides a step-by-step guide to the ContextFlow lifecycle, from project initiation to AI-enhanced knowledge preservation.
+This document provides a step-by-step guide to the Nexus lifecycle, from project initiation to AI-enhanced knowledge preservation.
 
 ## 1. System Setup Phase
 ### Step 1: Admin Creates Project
@@ -72,4 +72,4 @@ Every task state change triggers:
 - **State Machines**: Strict terminal states (`DONE`, `COMPLETED`).
 
 ---
-*ContextFlow: Turning Activity into Permanent Value.*
+*Nexus: Turning Activity into Permanent Value.*

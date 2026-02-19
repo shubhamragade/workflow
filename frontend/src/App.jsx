@@ -60,7 +60,7 @@ function MainLayout() {
             <Orbit className="text-primary w-6 h-6" />
           </div>
           <h1 className="text-lg font-bold tracking-tight text-text-main">
-            ContextFlow
+            Nexus
           </h1>
         </div>
 
