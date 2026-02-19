@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# Logs & Temp
+*.txt
+*.log
+test_output/
+wandb/
+
+# IDE
+.idea/
+.vscode/
+
+# Project Specific
+backend/instance/
+backend/test_*.py
+backend/verify_*.py
+backend/audit_*.py
+backend/check_*.py
+backend/delete_*.py

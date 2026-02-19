@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply text-text-main font-sans antialiased min-h-screen;
+    background-color: #f8fafc;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white border border-slate-200 shadow-sm;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-semibold transition-all duration-200 cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-hover hover:-translate-y-0.5 shadow-soft;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border border-border text-text-main hover:bg-glass;
+  }
+
+  .page-container {
+    @apply max-w-[1200px] mx-auto p-8;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply bg-glass border border-border rounded-xl px-4 py-3 text-text-main w-full outline-none focus:border-primary transition-colors;
+  }
+
+  .card {
+    @apply bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border rounded-full hover:bg-text-muted/30;
+}
+
+@layer components {
+  .markdown-content h3 {
+    @apply text-lg font-bold mt-4 mb-2 text-primary flex items-center gap-2;
+  }
+
+  .markdown-content ul {
+    @apply list-disc list-inside space-y-1 my-2 text-text-muted ml-1;
+  }
+
+  .markdown-content li {
+    @apply ml-2 marker:text-primary/70;
+  }
+
+  .markdown-content strong {
+    @apply font-semibold text-text-main;
+  }
+
+  .markdown-content p {
+    @apply mb-3 text-text-muted leading-relaxed;
+  }
+}
